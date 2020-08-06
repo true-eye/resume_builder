@@ -1,0 +1,50 @@
+.editor-wrapper {
+  border: 1px solid #e8ecf0;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(88, 88, 95, 0.14);
+  display: -ms-flexbox;
+  display: flex;
+
+  .keyword {
+    font-weight: 600;
+  }
+
+  #draftJsEditor {
+    position: relative;
+    width: 50%;
+
+    -ms-flex-order: 2;
+    order: 2;
+
+    border-left: 1px solid #ddd;
+  }
+
+  .DraftEditor-root {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 15px 0px;
+
+    height: 100%;
+    max-height: 430px;
+    margin-top: 0px;
+    border-top: none;
+
+    .public-DraftEditorPlaceholder-inner {
+      line-height: 22px;
+      font-style: italic;
+      font-size: 14px;
+      color: #bebbbb;
+      opacity: 1;
+    }
+
+    .public-DraftEditor-content {
+      position: relative;
+      z-index: 1;
+      font-size: 14px;
+      line-height: 1.62;
+    }
+  }
+  .examples-wrapper {
+    width: 50%;
+  }
+}
